@@ -75,7 +75,9 @@ slideClose(containerdiv);
   }
 
  function openGallery(){
+
    slideOpen(containerdiv);
+containerdiv.style.border="1px solid khaki";
   }
 
 function stop(){
@@ -135,8 +137,6 @@ if (step<n-1)
 function slideOpen(el){
 el.style.transition="height 0.5s linear 0s";
 el.style.height="100%";
-el.style.border="1px solid khaki";
-
 }
 
 function slideClose(el){
